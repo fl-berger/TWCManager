@@ -275,13 +275,13 @@
         # command line to find your rs485 adapter
         # If you're using a non-USB adapter like an RS485 shield, the value may need to
         # be something like '/dev/serial0'.
-        "port": "/dev/ttyUSB0"
+        #"port": "/dev/ttyUSB0"
 
         # Note that the RS485 module can also handle simple raw or rfc2217
         # TCP connections. If your requirements are simple, you could use
         # a URL such as:
         # "port": "rfc2217://<host>:<port>"     or
-        # "port": "socket://<host>:<port>"
+        "port": "socket://10.210.3.108:232"
 
       },
       "TCP": {
