@@ -17,7 +17,9 @@ config:
 	# Create twcmanager user and group
 	$(SUDO) useradd -U -m $(USER) 2>/dev/null; exit 0
 	$(SUDO) usermod -a -G dialout $(USER)
+	$(SUDO) groupadd bluetooth
 	$(SUDO) usermod -a -G bluetooth $(USER)
+	
 
 	# Create configuration directory
 	$(SUDO) mkdir -p /etc/twcmanager
